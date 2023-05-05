@@ -1,3 +1,17 @@
+'''
+Name: Lucy Lu
+CS 230 Section 3
+Data: NJ Maritime Museum Shipwreck Database
+Description: This program examines the shipwreck information in different states, including the number of lives loss, vessel types that contain the highest number of shipwrecks, shipwreck locations, and average values of the vessels
+'''
+
+import streamlit as st
+import pydeck as pdk
+import pandas as pd
+import matplotlib.pyplot as plt
+from PIL import Image
+
+
 #Add new column named "STATE" to the dataframe
 def getting_state(departure): #Filter out other places like foreign countries to make sure there's only state in the "STATE" column
     not_state = ["GB", "UK", "NZ", "NS", "NF", "NB", "SA"]
